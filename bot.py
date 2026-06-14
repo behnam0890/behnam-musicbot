@@ -18,7 +18,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("⏳ دارم دانلود میکنم...")
     try:
         ydl_opts = {
-            "format": "bestaudio/best",
+            "format": "best",
             "outtmpl": DOWNLOAD_PATH + "%(title)s.%(ext)s",
             "default_search": "ytsearch1",
             "quiet": False
